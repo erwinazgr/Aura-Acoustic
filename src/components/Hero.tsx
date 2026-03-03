@@ -7,14 +7,22 @@ export function Hero() {
       <Navbar />
 
       {/* Massive Background Text */}
-      <div className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center z-0 pointer-events-none flex flex-col items-center justify-center">
+      <div 
+        data-scroll 
+        data-scroll-speed="0.2"
+        className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center z-0 pointer-events-none flex flex-col items-center justify-center"
+      >
         <h1 className="text-[35vw] font-display text-black/5 leading-[0.75] tracking-tight select-none">
           AURA
         </h1>
       </div>
 
       {/* Main Heading - Placed behind the image for depth */}
-      <div className="absolute top-[20%] md:top-[12%] left-0 w-full text-center z-10 pointer-events-none px-4">
+      <div 
+        data-scroll 
+        data-scroll-speed="0.4"
+        className="absolute top-[20%] md:top-[12%] left-0 w-full text-center z-10 pointer-events-none px-4"
+      >
         <motion.h1 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -27,7 +35,11 @@ export function Hero() {
       </div>
 
       {/* Center Image - Using the provided transparent image */}
-      <div className="relative z-20 flex-1 flex items-center justify-center mt-24 md:mt-16 pointer-events-none">
+      <div 
+        data-scroll 
+        data-scroll-speed="-0.1"
+        className="relative z-20 flex-1 flex items-center justify-center mt-24 md:mt-16 pointer-events-none"
+      >
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 100 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}

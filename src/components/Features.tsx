@@ -33,6 +33,8 @@ export function Features() {
     <section className="py-32 bg-white text-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24">
         <motion.div
+          data-scroll
+          data-scroll-speed="0.1"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

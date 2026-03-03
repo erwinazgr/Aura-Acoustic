@@ -9,6 +9,8 @@ export function Footer() {
         {/* Left Side */}
         <div className="w-full md:w-1/2">
           <motion.h2 
+            data-scroll
+            data-scroll-speed="0.1"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
