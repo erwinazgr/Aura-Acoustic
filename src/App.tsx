@@ -8,6 +8,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import { Hero } from "./components/Hero";
 import { Features } from "./components/Features";
 import { Showcase } from "./components/Showcase";
+import { TechSpecs } from "./components/TechSpecs";
 import { TestimonialsSectionDemo } from "./components/TestimonialsDemo";
 import { Footer } from "./components/Footer";
 
@@ -25,6 +26,7 @@ export default function App() {
       <Hero />
       <Features />
       <Showcase />
+      <TechSpecs />
       <TestimonialsSectionDemo />
       <Footer />
     </main>

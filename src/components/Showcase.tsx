@@ -12,7 +12,7 @@ export function Showcase() {
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.5, 1, 0.5]);
 
   return (
-    <section ref={containerRef} className="relative h-[150vh] bg-[#0a0a0a] overflow-hidden">
+    <section ref={containerRef} className="relative h-[120vh] bg-[#0a0a0a] overflow-hidden">
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
         
         {/* Large Background Image with Parallax */}

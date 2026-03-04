@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 
 export function Navbar() {
@@ -9,18 +10,27 @@ export function Navbar() {
       </div>
       
       <div className="hidden md:flex items-center gap-12">
-        <a href="#" className="hover:text-white/70 transition-colors">Products</a>
-        <a href="#" className="hover:text-white/70 transition-colors">Technology</a>
-        <a href="#" className="hover:text-white/70 transition-colors">About</a>
-        <a href="#" className="hover:text-white/70 transition-colors">Support</a>
+        {['Products', 'Technology', 'About', 'Support'].map((item) => (
+          <a 
+            key={item} 
+            href="#" 
+            className="hover:text-white/70 transition-all duration-300 hover:scale-110 active:scale-95"
+          >
+            {item}
+          </a>
+        ))}
       </div>
 
-      <div className="flex items-center gap-3 cursor-pointer group">
-        <span className="text-white/80 group-hover:text-white transition-colors">// Pre-order</span>
-        <div className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center group-hover:border-white transition-colors">
-          <ArrowUpRight className="w-4 h-4" />
+      <motion.div 
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="flex items-center gap-3 cursor-pointer group"
+      >
+        <span className="text-white/80 group-hover:text-white transition-colors duration-300">// Pre-order</span>
+        <div className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center group-hover:border-white group-hover:bg-white/10 transition-all duration-300">
+          <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
         </div>
-      </div>
+      </motion.div>
     </nav>
   );
 }

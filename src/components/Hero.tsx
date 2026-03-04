@@ -3,7 +3,7 @@ import { Navbar } from "./Navbar";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-[#FF4500] to-[#E63E00] overflow-hidden flex flex-col pt-24">
+    <section className="relative h-[90vh] bg-gradient-to-b from-[#FF4500] to-[#E63E00] overflow-hidden flex flex-col pt-16">
       <Navbar />
 
       {/* Massive Background Text */}

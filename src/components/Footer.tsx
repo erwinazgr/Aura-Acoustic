@@ -22,13 +22,21 @@ export function Footer() {
           </motion.h2>
           
           <div className="flex flex-col sm:flex-row gap-4 mt-12">
-            <button className="px-8 py-4 bg-[#FF4500] text-white rounded-full font-bold uppercase tracking-wider text-sm hover:bg-[#E63E00] transition-colors flex items-center justify-center gap-2 group">
+            <motion.button 
+              whileHover={{ scale: 1.05, backgroundColor: "#E63E00" }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 bg-[#FF4500] text-white rounded-full font-bold uppercase tracking-wider text-sm transition-colors flex items-center justify-center gap-2 group"
+            >
               Pre-order Now
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </button>
-            <button className="px-8 py-4 border border-white/20 rounded-full font-bold uppercase tracking-wider text-sm hover:bg-white/10 transition-colors">
+            </motion.button>
+            <motion.button 
+              whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 border border-white/20 rounded-full font-bold uppercase tracking-wider text-sm transition-colors"
+            >
               View Specs
-            </button>
+            </motion.button>
           </div>
         </div>
 

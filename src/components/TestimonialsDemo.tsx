@@ -26,6 +26,30 @@ const testimonials = [
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face"
     },
     text: "Finally, an AI tool that actually understands context! The accuracy in natural language processing is impressive."
+  },
+  {
+    author: {
+      name: "James Wilson",
+      handle: "@jwilson_dev",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+    },
+    text: "Aura Acoustics has completely changed my workflow. The sound quality is just on another level compared to anything else."
+  },
+  {
+    author: {
+      name: "Elena Gilbert",
+      handle: "@elenag",
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    },
+    text: "The design is so sleek. It's rare to find a product that looks this good and performs even better."
+  },
+  {
+    author: {
+      name: "Marcus Chen",
+      handle: "@mchen_audio",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    },
+    text: "As an audio engineer, I'm extremely picky. These are the first wireless headphones I've actually enjoyed using for critical listening."
   }
 ]
 

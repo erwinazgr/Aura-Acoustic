@@ -30,7 +30,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-32 bg-white text-black relative overflow-hidden">
+    <section className="py-20 bg-white text-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24">
         <motion.div
           data-scroll
@@ -56,11 +56,12 @@ export function Features() {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -10 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex flex-col items-start group"
+              className="flex flex-col items-start group cursor-pointer"
             >
-              <div className="text-6xl font-display text-black/10 mb-6 group-hover:text-[#FF4500] transition-colors">
+              <div className="text-6xl font-display text-black/10 mb-6 group-hover:text-[#FF4500] transition-all duration-500 group-hover:scale-110 origin-left">
                 0{index + 1}
               </div>
               <h3 className="text-xl font-bold uppercase tracking-wide mb-3">{feature.title}</h3>

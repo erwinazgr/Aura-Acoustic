@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils"
+import { motion } from "motion/react"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 
 export interface TestimonialAuthor {
@@ -20,18 +21,24 @@ export function TestimonialCard({
   href,
   className
 }: TestimonialCardProps) {
-  const Card = href ? 'a' : 'div'
+  const Card = href ? motion.a : motion.div
   
   return (
     <Card
       {...(href ? { href } : {})}
+      whileHover={{ 
+        y: -5, 
+        scale: 1.02,
+        backgroundColor: "rgba(255, 255, 255, 0.08)",
+        borderColor: "rgba(255, 255, 255, 0.2)"
+      }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       className={cn(
         "flex flex-col rounded-xl border border-white/10",
         "bg-white/5 backdrop-blur-sm",
         "p-4 text-start sm:p-6",
-        "hover:bg-white/10 hover:border-white/20",
         "max-w-[320px] sm:max-w-[320px]",
-        "transition-all duration-300",
+        "transition-all duration-300 cursor-pointer",
         className
       )}
     >
